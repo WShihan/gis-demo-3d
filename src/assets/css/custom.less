@@ -1,0 +1,105 @@
+@---bgc: rgb(25, 25, 29);
+@--innerColor: rgb(41, 39, 39);
+@--acitiveFontColor: #fff;
+// 自定义颜色器
+:deep(.el-color-picker) {
+  width: 100%;
+  .el-color-picker__trigger {
+    width: 100%;
+    border: none;
+    border-color: rgb(67, 67, 78);
+  }
+  .el-color-picker__color {
+    border-color: rgb(67, 67, 78);
+  }
+  .el-color-picker__color-inner {
+    border-color: @---bgc;
+  }
+}
+// 拉条
+:deep(.el-slider) {
+  width: 100%;
+  .el-slider__bar {
+    background-color: @--innerColor;
+  }
+  .el-slider__runway {
+    background-color: rgb(60, 60, 65);
+  }
+  .el-tooltip__trigger.el-tooltip__trigger {
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: @--innerColor;
+  }
+}
+// 开关
+:deep(.el-switch) {
+  .el-switch__label {
+    // color: @--acitiveFontColor;
+    .el-switch__core {
+      border: none;
+      background: @---bgc;
+    }
+
+    &.is-active {
+      .el-switch__action {
+        background-color: red;
+      }
+    }
+  }
+}
+
+// 输入框
+:deep(.el-input) {
+  width: 100%;
+  .el-input__wrapper {
+    background: @---bgc;
+    border: none;
+    box-shadow: none;
+  }
+  input.el-input__inner {
+    background: @---bgc;
+    border: none;
+  }
+}
+// 折叠面板
+:deep(.el-collapse) {
+  padding: 0rem 0.0625rem;
+  margin: 0rem;
+  border: none;
+  &:hover {
+    color: @--acitiveFontColor;
+  }
+  .el-collapse-item__header {
+    color: @--acitiveFontColor;
+    background: rgb(50, 50, 54);
+    &.is-active {
+      background: rgb(50, 50, 54);
+    }
+  }
+  .el-collapse-item {
+    .el-collapse-item__wrap {
+      border: none;
+      background: rgb(50, 50, 54);
+    }
+    .el-collapse-item__header {
+      padding: 0rem 0.125rem;
+      border: none;
+    }
+    .el-collapse-item__content {
+      padding: 0rem;
+      margin: 0rem;
+      border: none;
+      background: rgb(50, 50, 54);
+    }
+  }
+}
+
+:deep(.el-form) {
+  .el-form-item {
+    padding: 0.0625rem 0.225rem;
+    margin: 10px 0rem;
+    .el-form-item__label {
+      color: @--acitiveFontColor;
+    }
+  }
+}
