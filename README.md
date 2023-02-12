@@ -2,9 +2,9 @@
 
 一个使用Vue、Cesium等编写三维GIS示例，集合常用功能代码。
 
-![image-20230212200056473](https://md-1301600412.cos.ap-nanjing.myqcloud.com/pic/image-20230212200056473.png)
+![image-20230212200555415](https://md-1301600412.cos.ap-nanjing.myqcloud.com/pic/image-20230212200555415.png)
 
-[点击demo]([gis demo 3d (xiemolin233.cn)](http://www.xiemolin233.cn/webapp#/))
+[点击demo预览](http://www.xiemolin233.cn/webapp#/)
 
 
 
