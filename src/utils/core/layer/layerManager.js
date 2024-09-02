@@ -1,9 +1,9 @@
 import { WMSTileLayer, WMTSTileLayer } from "@/utils/core/tiles/tile.js";
 import {
-  LayerEum,
+  // LayerEum,
   MapServiceTypeEnum,
-  WMSLayerOpt,
-  WMTSLayerOpt,
+  // WMSLayerOpt,
+  // WMTSLayerOpt,
 } from "@/utils/core/layer/layerEum.js";
 import { gisServer } from "@/config/settings.js";
 import { toRaw } from "vue";
@@ -64,23 +64,22 @@ export class LayerManager {
    * @memberof LayerManager
    */
   loadLayer(layer) {
+    console.log(layer)
     let lyr;
-    switch (layer.serviceType) {
-      case MapServiceTypeEnum.WMS:
-        const geoServerLyrProv = new Cesium.WebMapServiceImageryProvider({
-          url: gisServer.geoServr.url + "/" + layer.workSpace + "/wms",
-          layers: layer.name,
-          parameters: {
-            ...layer.params,
-          },
-        });
-        lyr = new WMSTileLayer(geoServerLyrProv, layer);
-        break;
-      case MapServiceTypeEnum.WMTS:
-        let wmtsPro = new Cesium.WebMapTileServiceImageryProvider(layer.params);
-        lyr = new WMTSTileLayer(wmtsPro, layer);
-        break;
+    if (layer.serviceType == MapServiceTypeEnum.WMS){
+      const geoServerLyrProv = new Cesium.WebMapServiceImageryProvider({
+        url: gisServer.geoServr.url + "/" + layer.workSpace + "/wms",
+        layers: layer.name,
+        parameters: {
+          ...layer.params,
+        },
+      });
+      lyr = new WMSTileLayer(geoServerLyrProv, layer);
+    } else if (layer.serviceType == MapServiceTypeEnum.WMTS) {
+      let wmtsPro = new Cesium.WebMapTileServiceImageryProvider(layer.params);
+      lyr = new WMTSTileLayer(wmtsPro, layer);
     }
+
     return lyr;
   }
 

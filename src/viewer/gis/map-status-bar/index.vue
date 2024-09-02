@@ -10,11 +10,6 @@
         <span>{{ mapInfo.scale }}</span>
       </div>
     </div>
-    <div class="status-item mouse-position" title="github仓库">
-      <a href="https://github.com/WShihan/gis-demo-3d" target="_blank" rel="noopener noreferrer">
-        <i class="icon iconfont icon-github" style="color: gray;"></i>
-      </a>
-    </div>
     <div class="status-item mouse-position" title="地形">
       <i class="icon iconfont icon-mountain" :style="{ color: terrain ? 'aqua' : 'gray' }"></i>
     </div>
@@ -33,6 +28,11 @@
     <div class="status-item">
       <i class="icon iconfont icon-user"></i
       ><span style="margin: ">&nbsp; {{ "访客" }} &nbsp;</span>
+    </div>
+    <div class="status-item " title="github仓库">
+      <a href="https://github.com/WShihan/gis-demo-3d" target="_blank" rel="noopener noreferrer">
+        <i class="icon iconfont icon-github" style="color: gray;"></i>
+      </a>
     </div>
   </div>
 </template>

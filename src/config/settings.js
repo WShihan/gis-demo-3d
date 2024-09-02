@@ -1,8 +1,6 @@
-import localImageryMap from "@/assets/img/baseMap.webp";
-
 export const gisServer = {
   geoServr: {
-    url: "http://www.xiemolin233.cn:8081/geoserver",
+    url: "http://www.wsh233.cn:8080/geoserver",
     desc: "geoServer服务器地址",
   },
 };
@@ -62,7 +60,7 @@ export const defaultSettings = {
     params: {},
   },
   // 默认打开图层集合id
-  defaultOpenLayers: [100, 180],
+  defaultOpenLayers: [100],
   // arcgis在线地形
   arcgisTerrainUrl:
     "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",

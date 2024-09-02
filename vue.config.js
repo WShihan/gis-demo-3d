@@ -2,7 +2,6 @@ const { defineConfig } = require("@vue/cli-service");
 const webpack = require("webpack");
 const path = require("path");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
-// process.env.VUE_APP_VERSION = "development";
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
