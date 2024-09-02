@@ -3,7 +3,7 @@
     <div class="panel" @mouseenter="enter" @mouseleave="leave">
       <div class="box" :style="styleObj">
         <div :class="['box-switch', , expand ? 'active' : '']" title="工具箱" @click="fixBox">
-          <i class="icon iconfont icon-func" :class="[fixed ? 'active' : '']"></i>
+          <i class="icon iconfont icon-model" :class="[fixed ? 'active' : '']"></i>
         </div>
         <div class="box-body" v-if="expand">
           <div

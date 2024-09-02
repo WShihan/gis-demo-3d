@@ -1,5 +1,4 @@
 const { defineConfig } = require("@vue/cli-service");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
@@ -9,10 +8,10 @@ function resolve(dir) {
 }
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: "./",
+  publicPath: "/webapp/gis-3d",
   outputDir: "dist", // 输出文件目录
   lintOnSave: false, // eslint 是否在保存时检查 关闭语法检查
-  assetsDir: "static/gis", // 配置js、css静态资源二级目录的位置
+  assetsDir: "static", // 配置js、css静态资源二级目录的位置
   configureWebpack: {
     output: {
       sourcePrefix: " ",
@@ -34,6 +33,11 @@ module.exports = defineConfig({
     ],
   },
   chainWebpack: (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      config
+        .plugin('webpack-bundle-analyzer')
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
+    }
     config.module.rule("svg").exclude.add(resolve("src/assets/icons")).end();
     // set svg-sprite-loader
     config.module.rule("svg").exclude.add(resolve("src/assets/icons")).end();

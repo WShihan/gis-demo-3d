@@ -1,9 +1,10 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3744850 */
   /* Color fonts */
-  src: url("//at.alicdn.com/t/c/font_3744850_gaadn0xv1l.woff2?t=1672709706358") format("woff2"),
-    url("//at.alicdn.com/t/c/font_3744850_gaadn0xv1l.woff?t=1672709706358") format("woff"),
-    url("//at.alicdn.com/t/c/font_3744850_gaadn0xv1l.ttf?t=1672709706358") format("truetype");
+  src: 
+       url('//at.alicdn.com/t/c/font_3744850_t91bfw1r3ni.woff2?t=1725271855081') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3744850_t91bfw1r3ni.woff?t=1725271855081') format('woff'),
+       url('//at.alicdn.com/t/c/font_3744850_t91bfw1r3ni.ttf?t=1725271855081') format('truetype');
 }
 
 .iconfont {
@@ -12,6 +13,226 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\eaf6";
+}
+
+.icon-weixiuchang:before {
+  content: "\e644";
+}
+
+.icon-yanhua:before {
+  content: "\e6a1";
+}
+
+.icon-a-huodongjiangli2x:before {
+  content: "\e62f";
+}
+
+.icon-gengduotese:before {
+  content: "\e6a4";
+}
+
+.icon-kongzhizhongxin:before {
+  content: "\eafa";
+}
+
+.icon-wangluo:before {
+  content: "\e62e";
+}
+
+.icon-APIshuchu:before {
+  content: "\ec16";
+}
+
+.icon-wj-tsdj:before {
+  content: "\e752";
+}
+
+.icon-waibaozhuang:before {
+  content: "\e62d";
+}
+
+.icon-changjing:before {
+  content: "\ec39";
+}
+
+.icon-wangge:before {
+  content: "\e629";
+}
+
+.icon-shipin:before {
+  content: "\eafb";
+}
+
+.icon-_sandclock:before {
+  content: "\e6cd";
+}
+
+.icon-qita:before {
+  content: "\e87b";
+}
+
+.icon-MadebyMade-Party-Vector-Icons-Outlined-:before {
+  content: "\e72b";
+}
+
+.icon--s-dawuyujing:before {
+  content: "\e6bf";
+}
+
+.icon-guangzhao:before {
+  content: "\e62a";
+}
+
+.icon-shpdaoru:before {
+  content: "\ec97";
+}
+
+.icon-tindixing:before {
+  content: "\eca5";
+}
+
+.icon-tuli:before {
+  content: "\e6ae";
+}
+
+.icon-dixingpipei:before {
+  content: "\edad";
+}
+
+.icon-bazer:before {
+  content: "\e641";
+}
+
+.icon-up:before {
+  content: "\e628";
+}
+
+.icon-code:before {
+  content: "\e62c";
+}
+
+.icon-develop:before {
+  content: "\e63a";
+}
+
+.icon-record:before {
+  content: "\e6b0";
+}
+
+.icon-output:before {
+  content: "\eabf";
+}
+
+.icon-juanlian:before {
+  content: "\e6c7";
+}
+
+.icon-mapping:before {
+  content: "\e678";
+}
+
+.icon-click-query:before {
+  content: "\e626";
+}
+
+.icon-point:before {
+  content: "\e65f";
+}
+
+.icon-tools:before {
+  content: "\e624";
+}
+
+.icon-jiaodu:before {
+  content: "\e634";
+}
+
+.icon-remove:before {
+  content: "\e623";
+}
+
+.icon-layer:before {
+  content: "\e8a4";
+}
+
+.icon-heightControl:before {
+  content: "\e859";
+}
+
+.icon-skyline:before {
+  content: "\ec82";
+}
+
+.icon-shadow:before {
+  content: "\e621";
+}
+
+.icon-contour:before {
+  content: "\e667";
+}
+
+.icon-digger:before {
+  content: "\e856";
+}
+
+.icon-control:before {
+  content: "\e64f";
+}
+
+.icon-cube:before {
+  content: "\e620";
+}
+
+.icon-fire:before {
+  content: "\e63e";
+}
+
+.icon-text:before {
+  content: "\e63f";
+}
+
+.icon-fog:before {
+  content: "\e61f";
+}
+
+.icon-surface_area:before {
+  content: "\e65e";
+}
+
+.icon-surface_line:before {
+  content: "\e61c";
+}
+
+.icon-clear:before {
+  content: "\e747";
+}
+
+.icon-line:before {
+  content: "\e617";
+}
+
+.icon-area:before {
+  content: "\e61b";
+}
+
+.icon-viewshed:before {
+  content: "\ec83";
+}
+
+.icon-height:before {
+  content: "\e64c";
+}
+
+.icon-location3dingwei3:before {
+  content: "\e6b6";
+}
+
+.icon-fanhui:before {
+  content: "\e658";
 }
 
 .icon-night:before {
@@ -34,7 +255,7 @@
   content: "\e60e";
 }
 
-.icon-xiaoyu:before {
+.icon-rain:before {
   content: "\e60f";
 }
 
@@ -54,7 +275,7 @@
   content: "\e61a";
 }
 
-.icon-shengdan-xiaxue:before {
+.icon-snow:before {
   content: "\e7ac";
 }
 
@@ -64,10 +285,6 @@
 
 .icon-triangle-down:before {
   content: "\e60c";
-}
-
-.icon-camera:before {
-  content: "\e967";
 }
 
 .icon-user:before {
@@ -86,7 +303,7 @@
   content: "\e60b";
 }
 
-.icon-func:before {
+.icon-model:before {
   content: "\e89f";
 }
 
@@ -178,10 +395,6 @@
   content: "\e604";
 }
 
-.icon-contour:before {
-  content: "\e645";
-}
-
 .icon-slop:before {
   content: "\ec81";
 }
@@ -194,7 +407,7 @@
   content: "\e618";
 }
 
-.icon-xiazai:before {
+.icon-download:before {
   content: "\e668";
 }
 

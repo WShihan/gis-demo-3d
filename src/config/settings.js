@@ -49,7 +49,7 @@ export const cesiumCfg = {
 
 export const defaultSettings = {
   // 地形默认开启
-  terrain: true,
+  terrain: false,
   // 地形透明度
   terrainOpacity: 1,
   // 深度检测
