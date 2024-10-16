@@ -29,11 +29,11 @@
       <i class="icon iconfont icon-user"></i
       ><span style="margin: ">&nbsp; {{ "访客" }} &nbsp;</span>
     </div>
-    <div class="status-item " title="github仓库">
+    <!-- <div class="status-item " title="github仓库">
       <a href="https://github.com/WShihan/gis-demo-3d" target="_blank" rel="noopener noreferrer">
         <i class="icon iconfont icon-github" style="color: gray;"></i>
       </a>
-    </div>
+    </div> -->
   </div>
 </template>
 
