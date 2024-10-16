@@ -11,6 +11,7 @@ module.exports = defineConfig({
   outputDir: "dist", // 输出文件目录
   lintOnSave: false, // eslint 是否在保存时检查 关闭语法检查
   assetsDir: "static/js", // 配置js、css静态资源二级目录的位置
+  productionSourceMap: false,
   configureWebpack: {
     output: {
       sourcePrefix: " ",
